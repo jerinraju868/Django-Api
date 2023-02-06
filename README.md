@@ -341,3 +341,17 @@
         if request.method == 'DELETE':
             task.delete()
         return Response()
+## Api/urls.py
+    from django.urls import  path
+    from Api import  views
+
+    urlpatterns = [
+        path('', views.getTask),
+        path('add/', views.addTask),
+        path('edit/<int:id>', views.putTask),
+        path('delete/<int:id>', views.deleteTask),
+    ]
+
+# **Browswer views for Api**
+![Screenshot from 2023-02-06 21-52-33](https://user-images.githubusercontent.com/117073931/217026710-c7a7134c-e56d-449d-946e-0a063abef5db.png)
+

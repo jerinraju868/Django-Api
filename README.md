@@ -255,8 +255,7 @@
     def delete(request, id):
         task = TodoList.objects.filter(id=id).delete()
         return redirect('home')
-
-## Browser View
+        
 
 # App/urls.py
     from django.urls import path
@@ -282,6 +281,13 @@
     python manage.py runserver
 
 # **Browser views**
+## Home page
+![Screenshot from 2023-02-06 21-45-34](https://user-images.githubusercontent.com/117073931/217025261-14ef4ef8-4040-4947-81cd-9272d36d5b88.png)
+## Create Task
+![Screenshot from 2023-02-06 21-46-38](https://user-images.githubusercontent.com/117073931/217025397-75af63fa-a489-4827-9522-fde10909b377.png)
+## Edit Task
+![Screenshot from 2023-02-06 21-47-13](https://user-images.githubusercontent.com/117073931/217025514-aae26bc4-4e20-4650-a81e-4719ca0725cc.png)
+
 
 # **API**
 
